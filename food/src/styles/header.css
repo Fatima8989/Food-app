@@ -1,0 +1,24 @@
+.header{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+}
+
+.logo{
+    text-align: center; 
+}
+
+.logo img{
+    height: 120px;
+    margin-bottom: -10px;
+    width: calc(200%-60%);
+    object-fit: contain;
+}
+
+.logo h4{
+    font-weight: 600;
+    font-size: 1rem;
+    color: black;
+    margin-top: -10px;
+    margin-bottom: 0px;
+}
