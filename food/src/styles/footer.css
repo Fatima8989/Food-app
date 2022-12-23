@@ -1,0 +1,88 @@
+.footer{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background: green;
+}
+
+.footer__logo img{
+    width: calc(100% - 70%);
+    margin-bottom: 5px;
+}
+
+.footer__logo h5 {
+    font-weight: 600;
+    font-style: 1rem; 
+    margin-bottom: 15px;
+}
+
+.footer__logo p{
+    font-style: .9rem;
+    color: beige;
+    line-height: 28px;
+}
+
+
+.delivery__time-item {
+    background: transparent !important;
+}
+
+.delivery__time-item span{
+    font-weight: 600;
+    font-style: 1rem;
+    color: black;
+    background: transparent;
+}
+.delivery__time-item p {
+     color: blacl;
+}
+.footer__title{
+    font-style: 1.1rem;
+    color: black;
+    font-weight: 600;
+}
+
+.newsletter{
+    padding: 5px;
+    border: 1px solid white;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+ 
+}
+.newsletter input{
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.newsletter input:focus{
+    outline: none;
+}
+
+.newsletter span{
+    background: white;
+    padding: 5px 30px;
+    border-radius: 5px;
+}
+
+.newsletter span i{
+    color: black;
+}
+
+
+.newsletter input::placeholder{
+    color: white;
+}
+
+.social__links span i{
+    padding: 5px;
+    background: black;
+    color: white;
+    border-radius: 50%;
+}
+
+.copyright__text {
+    font-style: .8rem;
+    color: black;
+}

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import {Container} from 'reactstrap';
 import logo from '../../assets/images/foodlogo.png'
 import {NavLink, Link} from 'react-router-dom'
@@ -23,6 +23,10 @@ const nav__links=[
     },
 ]
 const Header = () => {
+
+    const menuRef = useRef(null)
+    const toggleMenu = () => menuRef.current.classList.toggle('show__menu')
+
     return <header className='header'>
         <Container>
            <div className='nav__wrapper d-flex align-items-center 
@@ -33,35 +37,36 @@ const Header = () => {
             </div>
 
                 {/*menu*/}
-                <div className='logo' alt='logo'>
+                <div className='navigation' ref={menuRef}   onClick={toggleMenu}>
                     <div className='menu d-flex align-items-center gap-5'>
-
                         {
                             nav__links.map((item,index) =>(
-                                <NavLink to={item.path} key={index}>
+                                <NavLink to={item.path} key={index}
+                             
+                                className={navClass => navClass.isActive ? 'active__menu' : ''}
+                                >
                                     {item.display}
                                 </NavLink>
                             ))
                         }
-
                     </div>
                 </div>
 
             {/* nav right icons*/}
             <div className='nav__right d-flex align-items-center gap-3'>
                 <span className='cart__icon'>
-                <i class="ri-shopping-basket-line"></i>
-                <span className='cart__badge'></span>
+                <i className="ri-shopping-basket-line"></i>
+                <span className='cart__badge'>2</span>
                 </span>
 
                 <span className='user'>
                     <Link to='/login'>
-                        <i class="ri-user-line"></i>
+                        <i className="ri-user-line"></i>
                     </Link>
                 </span>
 
-                <span className='mobile__menu'>
-                <i class="ri-menu-line"></i>
+                <span className='mobile__menu' onclick={toggleMenu}>
+                <i className="ri-menu-line"></i>
                 </span>
             </div>
             </div>
