@@ -7,8 +7,31 @@ import '../styles/hero-section.css'
 
 import {Link} from 'react-router-dom'
 import Category from '../components/UI/category/Category.jsx'
+import '../styles/home.css'
+import featureImg01 from '../assets/images/service-01.png'
+import featureImg02 from '../assets/images/service-02.png'
+import featureImg03 from '../assets/images/service-03.png'
 
+import products from '../assets/fake-data/products.js'
+import ProductCard from '../components/UI/category/product-card/ProductCard.jsx'
 
+const featureData = [
+    {
+        title: 'Quick Delivery',
+        imgUrl: featureImg01,
+        desc:'Lorem ipsum',
+    },
+    {
+        title: 'Super Dine In',
+        imgUrl: featureImg02,
+        desc:'Lorem ipsum',
+    },
+    {
+        title: 'Easy Pick Up',
+        imgUrl: featureImg03,
+        desc:'Lorem ipsum',
+    },
+]
 const Home = () => {
     return <Helmet title ='Home'>
         <section>
@@ -47,10 +70,71 @@ const Home = () => {
                 </Row>
             </Container>
         </section>
-        <section>
+        <section className='pt-0'>
             <Category />
         </section>
 
+        <section>
+            <Container>
+                <Row>
+                    <Col lg='12' className='text-center'>
+                        <h5 className='feature__subtitile mb-4'>What we serve</h5>
+                        <h2 className='feature__title'>Just sit back at home</h2>
+                        <h2 className='feature__title'>we will <span>take care</span></h2>
+                        <p className='mb-1 mt-4 feature__text'>
+                            Lorem ipsum
+                        </p>
+                        <p className='feature__text'>
+                            lorem ipsum
+                        </p>
+                   
+                    </Col>
+                    
+                    {
+                        featureData.map((item, index) => (
+                            <Col lg='4' md='4' key={index}>
+                                <div className='feature__item text-center px-5 py-3'>
+                                    <img src={item.imgUrl} alt='feature-img' className='w-25 mb-3'/>
+                                    <h5 className='fw-bold mb-3 '>{item.title}</h5>
+                                    <p>{item.desc}</p>
+                                </div>
+                            </Col>
+                        ))
+                    }
+
+                    <Col lg='4' md='4'>
+                        <div className='feature__item'>
+
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
+        </section>
+
+        <section>
+            <Container>
+                <Row>
+                    <Col lg='12' className='text-center'>
+                        <h2>Popular Foods</h2>
+                    </Col>
+
+                    <Col lg='12'>
+                        <div className="food__category d-flex align-items-center justify-content-center gap-4">
+                            <button className='all__btn foodActive'>All</button>
+                            <button className='d-flex align-items-center gap-2'>Hamburger</button>
+                            <button className='d-flex align-items-center gap-2'>Pizza</button>
+                            <button className='d-flex align-items-center gap-2'>Mexican</button>
+                            <button className='d-flex align-items-center gap-2'>Asian</button>
+
+                        </div>
+                    </Col>
+                 
+                    <Col lg='3' md='4'>
+                        <ProductCard></ProductCard>
+                    </Col>
+                </Row>
+            </Container>
+        </section>
     </Helmet>
 }
 

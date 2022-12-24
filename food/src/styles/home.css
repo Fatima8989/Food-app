@@ -1,0 +1,35 @@
+.feature__subtitile{
+    color: red;
+    
+}
+
+.feature__title span{
+    color: red;
+}
+
+.feature__item p{
+    color: gray ;
+}
+
+.food__category{
+    background: rgb(251, 55, 55);
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px 0px;
+    border-radius: 8px;
+}
+
+.food__category button {
+    border: none;
+    outline: none;
+    padding: 7px 20px;
+    background: transparent;
+    color: white;
+    font-size: 20px;
+}
+
+.foodActive{
+    background: yellow !important;
+    border-radius: 5px;
+    color: red !important;
+}
