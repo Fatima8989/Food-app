@@ -128,14 +128,21 @@ const Home = () => {
 
                         </div>
                     </Col>
-                 
-                    <Col lg='3' md='4'>
-                        <ProductCard></ProductCard>
-                    </Col>
+                    {
+                        products.map(item =>( 
+                        <Col lg='3' md='4' key={item.id} className='mt-5'>
+                          <ProductCard item={item} />
+                        </Col>
+                     ))
+                    
+                    }
+                                        
                 </Row>
             </Container>
         </section>
     </Helmet>
+    
 }
+
 
 export default Home;

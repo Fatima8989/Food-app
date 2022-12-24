@@ -12,10 +12,8 @@
 .product__img:hover img{
     transform: scale(1);
 }
+
 .product__content h5 a{
     color: black;    
 }
 
-.product__content h5{
-    margin-bottom: 20px;
-}
