@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import Helmet from '../components/Helmet/Helmet.js'
 import {Container, Row, Col} from 'reactstrap'
 
@@ -13,7 +13,8 @@ import featureImg02 from '../assets/images/service-02.png'
 import featureImg03 from '../assets/images/service-03.png'
 
 import products from '../assets/fake-data/products.js'
-import ProductCard from '../components/UI/category/product-card/ProductCard.jsx'
+import ProductCard from '../components/UI/product-card/ProductCard.jsx'
+
 
 const featureData = [
     {
@@ -33,7 +34,46 @@ const featureData = [
     },
 ]
 const Home = () => {
-    return <Helmet title ='Home'>
+
+    const [category, setCategory] = useState('All')
+    const [allProducts, setAllProducts] = useState(products)
+
+      useEffect(() => {
+        if (category === "ALL") {
+          setAllProducts(products);
+        }
+
+        if(category === 'HAMBURGER') {
+            const filteredProducts = products.filter(item => item.category === 'Hamburger')
+
+            setAllProducts(filteredProducts)
+        }
+
+        if(category === 'PIZZA') {
+            const filteredProducts = products.filter(item => item.category === 'Pizza')
+
+            setAllProducts(filteredProducts)
+        }
+
+        if(category === 'MEXICAN') {
+            const filteredProducts = products.filter(item => item.category === 'Mexican')
+
+            setAllProducts(filteredProducts)
+        }
+
+        if(category === 'ASIAN') {
+            const filteredProducts = products.filter(item => item.category === 'Asian')
+
+            setAllProducts(filteredProducts)
+        }
+
+
+        
+    }, [category])
+
+
+    return (
+    <Helmet title ='Home'>
         <section>
             <Container>
                 <Row>
@@ -120,16 +160,16 @@ const Home = () => {
 
                     <Col lg='12'>
                         <div className="food__category d-flex align-items-center justify-content-center gap-4">
-                            <button className='all__btn foodActive'>All</button>
-                            <button className='d-flex align-items-center gap-2'>Hamburger</button>
-                            <button className='d-flex align-items-center gap-2'>Pizza</button>
-                            <button className='d-flex align-items-center gap-2'>Mexican</button>
-                            <button className='d-flex align-items-center gap-2'>Asian</button>
+                            <button className='all__btn foodActive' onClick={() => setCategory('ALL')}>All</button>
+                            <button className='d-flex align-items-center gap-2' onClick={() => setCategory('HAMBURGER')} >Hamburger</button>
+                            <button className='d-flex align-items-center gap-2' onClick={() => setCategory('PIZZA')} >Pizza</button>
+                            <button className='d-flex align-items-center gap-2' onClick={() => setCategory('MEXICAN')} >Mexican</button>
+                            <button className='d-flex align-items-center gap-2' onClick={() => setCategory('ASIAN')} >Asian</button>
 
                         </div>
                     </Col>
                     {
-                        products.map(item =>( 
+                        allProducts.map(item =>( 
                         <Col lg='3' md='4' key={item.id} className='mt-5'>
                           <ProductCard item={item} />
                         </Col>
@@ -141,7 +181,7 @@ const Home = () => {
             </Container>
         </section>
     </Helmet>
-    
+    )
 }
 
 

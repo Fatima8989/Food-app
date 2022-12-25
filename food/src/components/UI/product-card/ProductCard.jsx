@@ -1,6 +1,7 @@
 import React from 'react'
+import '../../../styles/product-card.css'
 import {Link} from 'react-router-dom'
-// import '../styles/product-card.css'
+
 
 const ProductCard = (props) => {
 
@@ -14,9 +15,9 @@ const ProductCard = (props) => {
 
         <div className='product__content'>
             <h5><Link to={`/foods/${id}`}>{title}</Link></h5>
-            <div>
+            <div className='d-flex align-items-center justify-content-between'>
                 <span className='product__price'>${price}</span>
-                <button className='addToCArt__btn'>Add to Cart</button>
+                <button className='addToCart__btn'>Add to Cart</button>
             </div>
         </div>
     </div>

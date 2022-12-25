@@ -23,6 +23,14 @@ import product_06_image_01 from "../images/bread(1).png";
 import product_06_image_02 from "../images/bread(2).png";
 import product_06_image_03 from "../images/bread(3).png";
 
+import product_07_image_01 from '../images/burger(1).png';
+import product_07_image_02 from '../images/burger(2).png';
+import product_07_image_03 from '../images/burger(3).png';
+
+import product_08_image_01 from '../images/taco(1).png';
+import product_08_image_02 from '../images/taco(2).png';
+import product_08_image_03 from '../images/taco(3).png';
+
 const products = [
   {
     id: "01",
@@ -31,8 +39,8 @@ const products = [
     image01: product_01_image_01,
     image02: product_01_image_02,
     image03: product_01_image_03,
-    category: "Burger",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque. ",
+    category: "Hamburger",
+    desc: " ",
   },
 
   {
@@ -44,7 +52,7 @@ const products = [
     image03: product_02_image_03,
     category: "Pizza",
 
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.",
+    desc: ".",
   },
 
   {
@@ -56,7 +64,7 @@ const products = [
     image03: product_03_image_03,
     category: "Pizza",
 
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.",
+    desc: "",
   },
 
   {
@@ -68,7 +76,7 @@ const products = [
     image03: product_04_image_03,
     category: "Pizza",
 
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.",
+    desc: "",
   },
 
   {
@@ -78,9 +86,9 @@ const products = [
     image01: product_05_image_01,
     image02: product_05_image_02,
     image03: product_05_image_03,
-    category: "Burger",
+    category: "Hamburger",
 
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.",
+    desc: "",
   },
   {
     id: "06",
@@ -89,9 +97,9 @@ const products = [
     image01: product_01_image_01,
     image02: product_01_image_02,
     image03: product_01_image_03,
-    category: "Burger",
+    category: "Hamburger",
 
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.",
+    desc: "",
   },
 
   {
@@ -103,7 +111,7 @@ const products = [
     image03: product_02_image_03,
     category: "Pizza",
 
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.",
+    desc: "",
   },
 
   {
@@ -115,7 +123,7 @@ const products = [
     image03: product_03_image_03,
     category: "Pizza",
 
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.",
+    desc: "",
   },
 
   {
@@ -127,7 +135,7 @@ const products = [
     image03: product_04_image_03,
     category: "Pizza",
 
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.",
+    desc: "",
   },
 
   {
@@ -137,9 +145,9 @@ const products = [
     image01: product_05_image_02,
     image02: product_05_image_01,
     image03: product_05_image_03,
-    category: "Burger",
+    category: "Hamburger",
 
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.",
+    desc: "",
   },
 
   {
@@ -151,7 +159,7 @@ const products = [
     image03: product_06_image_03,
     category: "Bread",
 
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.",
+    desc: ".",
   },
 
   {
@@ -163,7 +171,7 @@ const products = [
     image03: product_06_image_03,
     category: "Bread",
 
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.",
+    desc: ".",
   },
 
   {
@@ -175,8 +183,86 @@ const products = [
     image03: product_06_image_03,
     category: "Bread",
 
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.",
+    desc: "",
   },
+
+  {
+    id: "14",
+    title: "Salmon Burger",
+    price: 17.0,
+    image01: product_07_image_01,
+    image02: product_07_image_02,
+    image03: product_07_image_03,
+    category: "Hamburger",
+
+    desc: "",
+  },
+
+  {
+    id: "15",
+    title: "Bacon Burger",
+    price: 12.0,
+    image01: product_07_image_02,
+    image02: product_07_image_01,
+    image03: product_07_image_03,
+    category: "Hamburger",
+
+    desc: "",
+  },
+
+  {
+    id: "16",
+    title: "Double Burger",
+    price: 20.0,
+    image01: product_07_image_03,
+    image02: product_07_image_01,
+    image03: product_07_image_03,
+    category: "Hamburger",
+
+    desc: "",
+  },
+
+  {
+    id: "17",
+    title: "Taco Al Pastor",
+    price: 17.0,
+    image01: product_08_image_01,
+    image02: product_08_image_02,
+    image03: product_08_image_03,
+    category: "Mexican",
+
+    desc: "",
+  },
+
+  {
+    id: "18",
+    title: "Dacos De Birria",
+    price: 12.0,
+    image01: product_08_image_02,
+    image02: product_08_image_01,
+    image03: product_08_image_03,
+    category: "Mexican",
+
+    desc: "",
+  },
+
+  {
+    id: "19",
+    title: "Tacos De Cabeza",
+    price: 20.0,
+    image01: product_08_image_03,
+    image02: product_08_image_01,
+    image03: product_08_image_03,
+    category: "Mexican",
+
+    desc: "",
+  },
+
+
+
+
+ 
+
 ];
 
 export default products;
