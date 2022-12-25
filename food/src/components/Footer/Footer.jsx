@@ -13,7 +13,7 @@ const Footer = () => {
                   <img src={logo} alt='logo ' />
                   <h5>Roscioli</h5>
                   <p>Our history
-                    Roscioli is a name that encompasses many situations in a single reality. The Restaurant, the Salumeria, the Antico Forno, the Caffè Pasticceria, the Remittance and the Wine Club.</p>
+                    Roscioli is a name that encompasses many situations in a single reality. </p>
                 </div>
                 </Col>
                 <Col lg='3' md='4' sm='6'>
