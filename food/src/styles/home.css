@@ -1,161 +1,187 @@
 .feature__subtitile{
-    color: red;
-    
+  color: red;
 }
 
+.text__center h2{
+color: green;
+}
 .feature__title span{
-    color: red;
+  color: red;
 }
 
 .feature__item p{
-    color: gray ;
+  color: gray ;
 }
 
+.feature__item{
+margin-top: 60px;
+margin-bottom: -10px;
+}
+
+
 .food__category{
-    background: rgb(251, 55, 55);
-    text-align: center;
-    margin-top: 30px;
-    padding: 20px 0px;
-    border-radius: 8px;
+  background: rgb(251, 55, 55);
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px 0px;
+  border-radius: 8px;
 }
 
 .food__category button {
-    border: none;
-    outline: none;
-    padding: 7px 20px;
-    background: transparent;
-    color: white;
-    font-size: 20px;
+  border: none;
+  outline: none;
+  padding: 7px 20px;
+  background: transparent;
+  color: white;
+  font-size: 20px;
 }
 
 .foodActive{
-    background: yellow !important;
-    border-radius: 5px;
-    color: red !important;
+  background: yellow !important;
+  border-radius: 5px;
+  color: red !important;
 }
 
 .roscalio-title {
-    margin-top: 150px;
-    margin-bottom: 30px;
+  margin-top: 150px;
+  margin-bottom: 30px;
 }
 
 .location img{
-    margin-top: 120px;
+  margin-top: 120px;
 }
 
 .choose_us-title {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .choose_us-title i{
-    font-weight: 500 !important;
-    color: red;
+  font-weight: 500 !important;
+  color: red;
 }
 
 .social__img{
-    height: 300px;
-    width: 480px;
-    margin-top: 120px;
+  height: 300px;
+  width: 480px;
+  margin-top: 190px;
+  margin-left: 10px;
 }
 
 .testimonial{
-    margin-left: 60px;
+  margin-left: 60px;
 }
 .testimonial__subtitle{
-    margin-top: 120px;
-    color: rgba(24, 168, 170, 0.779);
+  margin-top: 120px;
+  color: rgb(13, 66, 97);
+  font-size: 40px;
+  margin-left: -20px;
 }
 
 .testimonial__desc {
-    color: gray;
+  color: gray;
 }
 
+.hero__content{
+padding-top: 60px;
+}
+
+.hero__service{
+margin-bottom: 60px;
+}
+
+.hero__order{
+margin-bottom: 50px;
+}
+
+.hero__img{
+margin-top: 20px;
+}
 
 @media only screen and (max-width: 768px) {
-  .hero__content h5 {
-    font-size: 1rem;
-  }
+.hero__content h5 {
+  font-size: 1rem;
+}
 
-  .hero__content p {
-    font-size: 0.8rem;
-    line-height: 25px;
-  }
+.hero__content p {
+  font-size: 0.8rem;
+  line-height: 25px;
+}
 
-  .hero__title {
-    font-size: 1.5rem;
-    line-height: 40px;
-  }
+.hero__title {
+  font-size: 1.5rem;
+  line-height: 40px;
+}
 
-  .hero__btns button {
-    padding: 5px 15px;
-    font-size: 0.7rem;
-  }
+.hero__btns button {
+  padding: 5px 15px;
+  font-size: 0.7rem;
+}
 
-  .hero__service p {
-    font-size: 0.7rem !important;
-  }
+.hero__service p {
+  font-size: 0.7rem !important;
+}
 
-  .feature__item h5 {
-    font-size: 0.9rem;
-  }
+.feature__item h5 {
+  font-size: 0.9rem;
+}
 
-  .feature__item p {
-    font-size: 0.8rem;
-    margin-bottom: 0;
-  }
+.feature__item p {
+  font-size: 0.8rem;
+  margin-bottom: 0;
+}
 
-  .feature__subtitle {
-    font-size: 1rem;
-  }
-  .feature__text {
-    font-size: 0.8rem;
-    margin-bottom: 0;
-  }
+.feature__subtitle {
+  font-size: 1rem;
+}
+.feature__text {
+  font-size: 0.8rem;
+  margin-bottom: 0;
+}
 
-  .food__category {
-    padding: 15px;
-  }
-  .food__category button {
-    padding: 5px 15px;
-    font-size: 0.7rem;
-  }
+.food__category {
+  padding: 15px;
+}
+.food__category button {
+  padding: 5px 15px;
+  font-size: 0.7rem;
+}
 
-  .roscalio-desc {
-    font-size: 0.8rem;
-    margin-bottom: 0;
-  }
+.roscalio-desc {
+  font-size: 0.8rem;
+  margin-bottom: 0;
+}
 
-  .choose__us-title {
-    font-size: 0.8rem;
-  }
+.choose__us-title {
+  font-size: 0.8rem;
+}
 
-  .choose__us-desc {
-    font-size: 0.7rem;
-  }
+.choose__us-desc {
+  font-size: 0.7rem;
+}
 
-  .testimonial__subtitle {
-    font-size: 1rem;
-  }
+.testimonial__subtitle {
+  font-size: 1rem;
+}
 
-  .testimonial__desc {
-    font-size: 0.8rem;
-  }
-  
-  }
+.testimonial__desc {
+  font-size: 0.8rem;
+}
+
+}
 
 @media only screen and (max-width: 576px) {
-  .hero__content {
-    text-align: center;
-  }
+.hero__content {
+  text-align: center;
+}
 
-  .hero__btns {
-    justify-content: center;
-  }
+.hero__btns {
+  justify-content: center;
+}
 
-  .hero__service {
-    justify-content: center;
-  }
-  .why__choose-us {
-    padding-top: 0 !important;
-  }
+.hero__service {
+  justify-content: center;
+}
+.why__choose-us {
+  padding-top: 0 !important;
+}
 }

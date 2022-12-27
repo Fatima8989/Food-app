@@ -18,10 +18,10 @@ const Testimonial = () => {
     }
 
     return (
-        <Slider {...settings}>
+        <Slider {...settings} className='slider__dsg'>
             <div>
                 <p className='review__text'>
-                    First review
+                This restaurant is one of the famous restaurant in the city, hence it seems always full of customers.It's worth the wait, the foods and drinks are delicious, the side dishes with a little sweetness and main course are really spicy but I love that taste a lot.
                 </p>
         
             <div className='slider__content d-flex align-items-center gap-3'>
@@ -32,7 +32,7 @@ const Testimonial = () => {
 
             <div>
                 <p className='review__text'>
-                    Second review
+                Came for a celebration with my husband. We loved Mexican culinary . I has been there 3 times before and the experience was amazing. The mains were fantastic which were amazing with lots of flavours and side dishes are quite good. 
                 </p>
         
             <div className='slider__content d-flex align-items-center gap-3'>
@@ -43,7 +43,7 @@ const Testimonial = () => {
 
             <div>
                 <p className='review__text'>
-                    Third review
+                I decided to try out the restaurant near the The Pantheon monument where I work. It always smells good when I go to work. Once, I had lunch there, and I went for pizza cause it's my favorite dish.
                 </p>
         
             <div className='slider__contentd-flex align-items-center gap-3'>

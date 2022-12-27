@@ -27,11 +27,27 @@
 
 }
 
+.table-bordered{
+    margin-top: 60px;
+    background: rgb(251, 251, 229);   
+}
 
 .increase__btn, .decrease__btn{
     cursor: pointer;
 } 
 
+.addTOCart__btn{
+    background: red;
+    border-radius: 5px;
+    border: 1px transparent;
+    padding: 5px 9px;
+    margin-bottom: 30px;
+}
+
+.addTOCart__btn a{
+    text-decoration: none;
+    color: white;
+}
 .delete__btn{
     font-style: 1.1rem;
     font-weight: 600;
@@ -97,6 +113,15 @@
     color: rgb(76, 76, 76);
     font-weight: 600;
 
+}
+
+.subtotal__cart h6{
+    margin-top: 80px;
+}
+
+.subtotal__cart p{
+    margin-top: 15px;
+    margin-bottom: 40px;
 }
 
 @media only screen and (max-width: 576px) {

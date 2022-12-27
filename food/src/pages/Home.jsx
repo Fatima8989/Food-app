@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import Helmet from '../components/Helmet/Helmet.js'
-import {Container, Row, Col, ListGroup, ListGroupItem} from 'reactstrap'
+import {Container, Row, Col} from 'reactstrap'
 
 import heroImg from '../assets/images/santo.png'
 import '../styles/hero-section.css'
@@ -15,8 +15,6 @@ import featureImg03 from '../assets/images/service-03.png'
 import products from '../assets/fake-data/products.js'
 import ProductCard from '../components/UI/product-card/ProductCard.jsx'
 
-import whyImg from '../assets/images/location3.png'
-
 import networkImg from '../assets/images/network2.png'
 
 import TestimonialSlider from '../components/UI/slider/Testimonial.jsx'
@@ -25,17 +23,17 @@ const featureData = [
     {
         title: 'Quick Delivery',
         imgUrl: featureImg01,
-        desc:'Lorem ipsum',
+        desc:'We make lives easier with our convenient and efficient delivery services',
     },
     {
         title: 'Super Dine In',
         imgUrl: featureImg02,
-        desc:'Lorem ipsum',
+        desc:'Our food is excellent, absolutely delicious, best breakfast and pizza and staff is so friendly.',
     },
     {
         title: 'Easy Pick Up',
         imgUrl: featureImg03,
-        desc:'Lorem ipsum',
+        desc:'Very professional and the booking was very easy, good communication',
     },
 ]
 const Home = () => {
@@ -85,8 +83,8 @@ const Home = () => {
                     <Col lg='6' md='6'>
                         <div className='hero__content'>
                             <h5 className='mb-3'>Easy way to make an order</h5>
-                            <h1 className='mb-4 hero__title'><span>HUNGRY?</span> Just wait food <span>at your door</span></h1>
-                            <p>Order the delivery of the food you want to your home or office. Visit the site, enter your address and enjoy delicious food.</p>
+                            <h1 className='mb-4 hero__title'><span>Quality,</span> you can taste at<span> your door</span></h1>
+                            <p className='hero__order'>Order the delivery of the food you want to your home or office. Visit the site, enter your address and enjoy delicious food.</p>
 
                             <div className='hero__btns d-flex align-items-center 
                             gap-5 mt-4'>
@@ -122,19 +120,8 @@ const Home = () => {
         <section>
             <Container>
                 <Row>
-                    <Col lg='12' className='text-center'>
-                        <h5 className='feature__subtitile mb-4'>What we serve</h5>
-                        <h2 className='feature__title'>Just sit back at home</h2>
-                        <h2 className='feature__title'>we will <span>take care</span></h2>
-                        <p className='mb-1 mt-4 feature__text'>
-                            Lorem ipsum
-                        </p>
-                        <p className='feature__text'>
-                            lorem ipsum
-                        </p>
-                   
-                    </Col>
-                    
+                 
+        
                     {
                         featureData.map((item, index) => (
                             <Col lg='4' md='4' key={index}>
@@ -186,45 +173,7 @@ const Home = () => {
             </Container>
         </section>
 
-        <section>
-            <Container>
-                <Row>
-                    <Col lg='6' md='6' className='location'> 
-                    <img src={whyImg} alt="why-roscalio" className=' w-100'/>
-                    </Col>
-
-                    <Col lg='6' md='6'> 
-                    <div className="why__roscalio">
-                        <h2 className='roscalio-title '>Why Roscalio?</h2>
-                    
-
-                        <ListGroup className=' mt-6'>
-                            <ListGroupItem className='border-0 ps-2'>
-                            <p className='choose_us-title d-flex align-items-center gap-2'>
-                            <i class="ri-checkbox-line"></i>
-                            Fresh and tasty foods
-                            </p>
-                            </ListGroupItem>
-              
-                            <ListGroupItem className='border-0 ps-2'>
-                            <p className='choose_us-title d-flex align-items-center gap-2'>
-                            <i class="ri-checkbox-line"></i>
-                            Quality support
-                            </p>
-                            </ListGroupItem>
-                   
-                            <ListGroupItem className='border-0 ps-2'>
-                            <p className='choose_us-title d-flex align-items-center gap-2'>
-                            <i class="ri-checkbox-line"></i>
-                            Order from any location {''}
-                            </p>
-                            </ListGroupItem>
-                        </ListGroup>
-                    </div>
-                    </Col>
-                </Row>
-            </Container>
-        </section>
+        
 
         <section>
             <Container>
@@ -232,11 +181,10 @@ const Home = () => {
                 <Col lg='6' md='6'>
                     <div className='testimonial'>
                         <h5 className='testimonial__subtitle  mb-4'>Social Media Testimonial</h5>
-                        <h2 className='testimonial__title  mb-4'>What our <span>customers</span> are saying</h2>
-                        <p className='testimonial__desc'>text</p>
-                      
-                        <TestimonialSlider/>
+
+                        <TestimonialSlider className='testimonial__txt'/>
                         </div>
+
                     </Col>
 
                     <Col lg='6' md='6'>
