@@ -181,7 +181,6 @@ const Home = () => {
                 <Col lg='6' md='6'>
                     <div className='testimonial'>
                         <h5 className='testimonial__subtitle  mb-4'>Social Media Testimonial</h5>
-
                         <TestimonialSlider className='testimonial__txt'/>
                         </div>
 
